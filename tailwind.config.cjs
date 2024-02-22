@@ -17,8 +17,10 @@ module.exports = {
         brun: "#AE835F",
       },
       fontFamily: {
-        moret: ["Moret"],
+        moret: ["moret"],
+        work: ["work-sans"]
       },
+      
     },
   },
 };

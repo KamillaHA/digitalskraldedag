@@ -1,0 +1,61 @@
+<section>
+  <p>Registrer dit digitale skrald</p>
+  <img class="pil" src="../../public/img/pil.png" /><br />
+
+  <div class="ryst">
+    <a href="#registrer"
+      ><img class="ryst" src="../../public/img/fordobling.png" /></a
+    >
+  </div>
+</section>
+
+<style>
+  section {
+    text-align: center;
+    margin-top: 20px;
+  }
+  p {
+    font-family: "moret", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ed9045;
+    font-size: 30px;
+  }
+  .pil {
+    width: 3%;
+    height: auto;
+    margin-bottom: 40px;
+  }
+  .ryst {
+    display: inline-block;
+    max-width: 50%;
+  }
+  .ryst:hover {
+    cursor: pointer;
+    -webkit-animation-name: shake;
+    -webkit-animation-duration: 0.5s;
+    -webkit-transform-origin: 50% 50%;
+    -webkit-animation-iteration-count: infinite;
+  }
+  @-webkit-keyframes shake {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+
+    25% {
+      -webkit-transform: rotate(2deg);
+    }
+
+    50% {
+      -webkit-transform: rotate(-2deg);
+    }
+
+    75% {
+      -webkit-transform: rotate(2deg);
+    }
+
+    100% {
+      -webkit-transform: rotate(-2deg);
+    }
+  }
+</style>

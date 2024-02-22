@@ -1,69 +1,57 @@
----
-import KrydsKnap from "../components/KrydsKnap.astro";
----
-
-<nav>
-  <ul>
+<nav class="bg-gron m-0 p-8">
+  <ul class="list-none flex
+   justify-between items-center">
     <div class="logo">
       <li>
         <a href="/">Logo<img src="/img/logo.svg" alt="Forside" /></a>
       </li>
     </div>
 
-    <KrydsKnap />
+    <div class="text-beige">
+      <li><a href="#front">Info</a></li>
+    </div>
+    <div class="text-beige">
+      <li><a href="#viden">Viden om digitalt skrald</a></li>
+    </div>
+    <div class="text-beige">
+      <li><a href="#hvordan">Hvordan gør man?</a></li>
+    </div>
+    <div class="text-beige">
+      <li><a href="#registrer">Registrér skrald</a></li>
+    </div>
 
-    <div class="some">
+    <div class="flex">
       <li>
         <a
           href="https://www.instagram.com/worldcleanupday.global/"
           target="_blank"
-          ><img src="../../src/assets/images/insta.png" alt="instagram" /></a
+          ><img
+            class="w-16 pr-6 pb-2 cursor-pointer hover:scale-110"
+            src="../../src/assets/images/insta.png"
+            alt="instagram"
+          /></a
         >
       </li>
       <li>
         <a
           href="https://www.facebook.com/worldcleanupday.global/"
           target="_blank"
-          ><img src="../../src/assets/images/face.png" alt="facebook" /></a
+          ><img
+            class="w-16 pr-6 pb-2 cursor-pointer hover:scale-110"
+            src="../../src/assets/images/face.png"
+            alt="facebook"
+          /></a
         >
       </li>
       <li>
         <a href="https://twitter.com/letsdoitworld?lang=da" target="_blank"
-          ><img src="../../src/assets/images/twit.png" alt="twitter" /></a
+          ><img
+            class="w-16 pr-6 pb-2 cursor-pointer hover:scale-110"
+            src="../../src/assets/images/twit.png"
+            alt="twitter"
+          /></a
         >
       </li>
     </div>
   </ul>
 </nav>
-
-<style>
-  nav {
-    background-color: #2b4735;
-    margin: 0;
-    padding: 20px;
-  }
-  ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #ffffff;
-  }
-  a {
-    color: #ffffff;
-  }
-  .some {
-    display: flex;
-  }
-  img {
-    max-width: 30px;
-    padding-right: 20px;
-    padding-bottom: 2px;
-    cursor: pointer;
-  }
-  img:hover {
-    max-width: 32px;
-    padding-right: 18px;
-    padding-bottom: 0;
-  }
-</style>

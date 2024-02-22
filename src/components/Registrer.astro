@@ -1,69 +1,19 @@
-<h3>Registrer mit skrald</h3>
+<h1 class="text-center text-4xl text-green-900 mb-20 font-medium mt-40">Registrer mit skrald</h1>
 
-<a id="registrer">
-  <section>
-    <div class="center">
-      <div class="mitskrald">
-        <form>
-          <input type="text" placeholder="Navn" /><br />
-          <input type="text" placeholder="Email" /><br />
-          <input type="text" placeholder="Antal deltagere" /><br />
-          <input type="text" placeholder="Slettet skrald (i GB)" /><br />
-          <div>
-            <input type="checkbox" id="nyhedsbrev" name="nyhedsbrev" />
-            <label for="nyhedsbrev">Ja tak til nyhedsbrev</label><br />
-          </div>
-          <input type="button" value="Registrer mit skrald" class="button" />
-        </form>
-      </div>
+<section id="køb" class="pb-40 w-2/5">
+  <form class="grid grid-cols-2" action="/action_page.php">
+    <div>
+      <input class="rounded focus:border-red-700" type="text" id="fname" name="fname" placeholder="Navn" /><br />
+      <br />
+      <input class="rounded focus:border-red-700" type="text" id="lname" name="lname" placeholder="Email" /><br />
+      <br />
+      <input class="text-red-700 bg-gray-100 focus:ring-red-700 dark:focus:ring-red-700 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" type="checkbox" /> Ja tak til nyhedsbrev
     </div>
-  </section>
-</a>
-<style>
-  h3 {
-    font-size: 30px;
-    color: #2b4735;
-    font-family: "moret", serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  .mitskrald {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  form input {
-    padding: 6px;
-    margin: 4px;
-  }
-  .button {
-    background-color: #e3a1ad;
-    cursor: pointer;
-    border-style: none;
-    border-radius: 20px;
-    border: 2px solid #ed9045;
-    box-shadow: 1px 1px 8px hsl(36, 19%, 60%);
-    color: #ffffff;
-  }
-  form .button {
-    padding: 10px 20.5px 10px 20.5px;
-    margin-top: 20px;
-  }
-  .button:hover {
-    background-color: #ed9045;
-    color: #ffffff;
-    transition: 0.5s;
-  }
-  form,
-  .button,
-  form input {
-    font-family: "moret", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-</style>
+    <div>
+      <input class="rounded focus:border-red-700" type="text" id="fname" name="fname" placeholder="Antal deltagere" /><br />
+      <br />
+      <input class="rounded focus:border-red-700" type="text" id="lname" name="lname" placeholder="Slettet skrald (i GB) " /><br />
+      <br />
+    </div>
+  </form>
+</section>

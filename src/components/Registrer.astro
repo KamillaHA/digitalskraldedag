@@ -1,11 +1,11 @@
 ---
-import KrydsKnap from "../components/KrydsKnap.astro";
+import Button from "../components/Button.astro";
 ---
 
 <a id="registrer">
   <h1 class="text-center font-moret text-4xl text-gron mb-12 font-medium mt-40">Registrer mit skrald</h1>
 
-  <section id="køb" class="pb-40 w-5/12 m-auto">
+  <section id="køb" class="pb-12 w-5/12 m-auto">
     <form class="grid grid-cols-2" action="/action_page.php">
       <div>
         <input class="rounded border-orange focus:border-orange" type="text" id="fname" name="fname" placeholder="Navn" /><br />
@@ -22,4 +22,9 @@ import KrydsKnap from "../components/KrydsKnap.astro";
       </div>
     </form>
   </section>
+
+  <div class="grid grid-cols-2 w-96 m-auto mb-40">
+    <div class="ml-20"><Button>Tilmeld</Button></div>
+    <div><Button>Del med en ven</Button></div>
+  </div>
 </a>

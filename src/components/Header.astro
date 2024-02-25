@@ -1,6 +1,8 @@
 ---
 import Logo from "../assets/images/logo.svg";
 import Insta from "../assets/images/insta.png";
+import Twit from "../assets/images/twit.png";
+import Face from "../assets/images/face.png";
 import { Image } from "astro:assets";
 ---
 
@@ -37,15 +39,6 @@ import { Image } from "astro:assets";
 
     <div class="flex">
       <li>
-        <!-- <a
-          href="https://www.instagram.com/worldcleanupday.global/"
-          target="_blank"
-          ><img
-            class="w-12 pr-6 cursor-pointer hover:scale-110"
-            src="/assets/images/insta.png"
-            alt="instagram"
-          /></a
-        > -->
         <Image
           src={Insta}
           alt="Københavnerbilleder bogforside"
@@ -53,24 +46,18 @@ import { Image } from "astro:assets";
         />
       </li>
       <li>
-        <a
-          href="https://www.facebook.com/worldcleanupday.global/"
-          target="_blank"
-          ><img
-            class="w-12 pr-6 cursor-pointer hover:scale-110"
-            src="face.png"
-            alt="facebook"
-          /></a
-        >
+        <Image
+          src={Face}
+          alt="Københavnerbilleder bogforside"
+          class="w-12 pr-6 cursor-pointer hover:scale-110"
+        />
       </li>
       <li>
-        <a href="https://twitter.com/letsdoitworld?lang=da" target="_blank"
-          ><img
-            class="w-12 pr-6 cursor-pointer hover:scale-110"
-            src="/twit.png"
-            alt="twitter"
-          /></a
-        >
+        <Image
+          src={Twit}
+          alt="Københavnerbilleder bogforside"
+          class="w-12 pr-6 cursor-pointer hover:scale-110"
+        />
       </li>
     </div>
   </ul>

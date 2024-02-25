@@ -38,27 +38,11 @@ import { Image } from "astro:assets";
     </div>
 
     <div class="flex">
-      <li>
-        <Image
-          src={Insta}
-          alt="Københavnerbilleder bogforside"
-          class="w-12 pr-6 cursor-pointer hover:scale-110"
-        />
-      </li>
-      <li>
-        <Image
-          src={Face}
-          alt="Københavnerbilleder bogforside"
-          class="w-12 pr-6 cursor-pointer hover:scale-110"
-        />
-      </li>
-      <li>
-        <Image
-          src={Twit}
-          alt="Københavnerbilleder bogforside"
-          class="w-12 pr-6 cursor-pointer hover:scale-110"
-        />
-      </li>
+      <a href="https://www.instagram.com/"><Image src={Insta} alt="Instagram" class="w-12 pr-6 cursor-pointer hover:scale-110" /></a>
+
+      <a href="https://www.facebook.com/"><Image src={Face} alt="Facebook" class="w-12 pr-6 cursor-pointer hover:scale-110" /></a>
+
+      <a href="https://twitter.com/?lang=da"> <Image src={Twit} alt="Twitter" class="w-12 pr-6 cursor-pointer hover:scale-110" /></a>
     </div>
   </ul>
 </nav>

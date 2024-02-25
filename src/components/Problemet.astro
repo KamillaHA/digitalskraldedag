@@ -1,32 +1,64 @@
+---
+import Vægt from "../assets/images/vægt.svg";
+import Fly from "../assets/images/fly.svg";
+import Graf from "../assets/images/graf.svg";
+import Fordobling from "../assets/images/fordobling.svg";
+import { Image } from "astro:assets";
+---
+
 <section class="flex flex-col gap-20">
-  <h1 class="text-center text-4xl text-gron font-medium font-moret">Problemet med digitalt skrald</h1>
+  <h1 class="text-center text-4xl text-gron font-medium font-moret">
+    Problemet med digitalt skrald
+  </h1>
 
   <section class="grid grid-cols-2">
     <div class="grid grid-cols-3">
-      <img class="w-30 mr-3" src="src/assets/images/vægt.svg" alt="" />
+      <Image
+        src={Vægt}
+        alt="Københavnerbilleder bogforside"
+        class="w-30 mr-3"
+      />
       <div class="col-span-2">
-        <h3 class="text-xl text-gron mb-2 font-medium font-work">Internettet producerer mere end 900 mio. ton CO2 om året</h3>
+        <h3 class="text-xl text-gron mb-2 font-medium font-work">
+          Internettet producerer mere end 900 mio. ton CO2 om året
+        </h3>
       </div>
     </div>
     <div class="grid grid-cols-3">
-      <img class="w-29 mx-4" src="src/assets/images/fly.svg" alt="" />
+      <Image src={Fly} alt="Københavnerbilleder bogforside" class="w-29 mx-4" />
       <div class="col-span-2">
-        <h3 class="text-xl text-gron mb-2 font-medium font-work">Internettet bruger 3,7% af den globale udledning, hvilket er det samme som alt lufttrafik i verden</h3>
+        <h3 class="text-xl text-gron mb-2 font-medium font-work">
+          Internettet bruger 3,7% af den globale udledning, hvilket er det samme
+          som alt lufttrafik i verden
+        </h3>
       </div>
     </div>
   </section>
 
   <section class="grid grid-cols-2">
     <div class="grid grid-cols-3">
-      <img class="w-30 mx-8" src="src/assets/images/graf.svg" alt="" />
+      <Image
+        src={Graf}
+        alt="Københavnerbilleder bogforside"
+        class="w-30 mx-8"
+      />
       <div class="col-span-2">
-        <h3 class="text-xl text-gron mb-2 font-medium font-work">Global energi-relateret CO2 voksede i år 2022 til 0,9% med mere end 36,8 milliarder ton</h3>
+        <h3 class="text-xl text-gron mb-2 font-medium font-work">
+          Global energi-relateret CO2 voksede i år 2022 til 0,9% med mere end
+          36,8 milliarder ton
+        </h3>
       </div>
     </div>
     <div class="grid grid-cols-3">
-      <img class="w-24 ml-10 mr-2" src="src/assets/images/fordobling.svg" alt="" />
+      <Image
+        src={Fordobling}
+        alt="Københavnerbilleder bogforside"
+        class="w-24 ml-10 mr-2"
+      />
       <div class="col-span-2">
-        <h3 class="text-xl text-gron mb-2 font-medium font-work">Denne udledning på 3,7% forventes fordoblet i år 2025</h3>
+        <h3 class="text-xl text-gron mb-2 font-medium font-work">
+          Denne udledning på 3,7% forventes fordoblet i år 2025
+        </h3>
       </div>
     </div>
   </section>

@@ -1,13 +1,23 @@
 ---
 import Button from "../components/Button.astro";
+import Telefon from "../assets/images/telefon.svg";
+import { Image } from "astro:assets";
 ---
 
 <section class="mb-20">
-  <h1 class="text-7xl text-center text-gron pt-10 pb-2 font-moret">Digital Skraldedag</h1>
-  <h2 class="text-4xl text-center ml-72 text-brun pt-1 font-moret">16 marts 2024</h2>
+  <h1 class="text-7xl text-center text-gron pt-10 pb-2 font-moret">
+    Digital Skraldedag
+  </h1>
+  <h2 class="text-4xl text-center ml-72 text-brun pt-1 font-moret">
+    16 marts 2024
+  </h2>
 
   <div class="grid grid-cols-2">
-    <img class="-ml-72 w-6/6" src="/src/assets/images/telefon.svg" />
+    <Image
+      src={Telefon}
+      alt="Københavnerbilleder bogforside"
+      class="-ml-72 w-6/6"
+    />
     <div class="mt-20 ml-12"><Button size="large">Save the date!</Button></div>
   </div>
 </section>

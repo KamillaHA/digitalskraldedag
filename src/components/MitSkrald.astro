@@ -1,18 +1,44 @@
+---
+import Email from "../assets/images/email.svg";
+import Lagring from "../assets/images/telefonlagring.svg";
+import { Image } from "astro:assets";
+---
+
 <section class="flex flex-col gap-20 mb-40">
-  <h1 class="text-center text-4xl text-gron font-moret font-medium mt-40">Hvor meget har jeg fjernet?</h1>
+  <h1 class="text-center text-4xl text-gron font-moret font-medium mt-40">
+    Hvor meget har jeg fjernet?
+  </h1>
 
   <div class="grid grid-cols-2">
     <div>
       <h3 class="text-xl text-brun mb-2 font-moret font-medium">Slet emails</h3>
-      <p class="font-work">Tjek din nuværende størrelse på din mail. Filtrer dine mails. Slet lange samtaler. Unsubscribe alle nyhedsbreve. Bloker uønskede afsendere. Fjern email notifikationer fra apps og sociale medier</p>
+      <p class="font-work">
+        Tjek din nuværende størrelse på din mail. Filtrer dine mails. Slet lange
+        samtaler. Unsubscribe alle nyhedsbreve. Bloker uønskede afsendere. Fjern
+        email notifikationer fra apps og sociale medier
+      </p>
     </div>
-    <img class="w-52 ml-40" src="src/assets/images/email.svg" alt="" />
+    <Image
+      src={Email}
+      alt="Københavnerbilleder bogforside"
+      class="w-52 ml-40"
+    />
   </div>
   <div class="grid grid-cols-2">
-    <img class="w-40 ml-40" src="src/assets/images/telefonlagring.svg" alt="" />
+    <Image
+      src={Lagring}
+      alt="Københavnerbilleder bogforside"
+      class="w-40 ml-40"
+    />
     <div>
-      <h3 class="text-xl text-brun mb-2 font-moret font-medium">Slet mobillagring</h3>
-      <p class="font-work">Tjek din nuværende lagringsstatus. Slet alt unødvendigt. Slet din datahistorik. Gem vigtige dokumenter i skyen og billeder samt videoer på harddrives.</p>
+      <h3 class="text-xl text-brun mb-2 font-moret font-medium">
+        Slet mobillagring
+      </h3>
+      <p class="font-work">
+        Tjek din nuværende lagringsstatus. Slet alt unødvendigt. Slet din
+        datahistorik. Gem vigtige dokumenter i skyen og billeder samt videoer på
+        harddrives.
+      </p>
     </div>
   </div>
 </section>

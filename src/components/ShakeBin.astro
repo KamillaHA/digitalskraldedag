@@ -1,11 +1,27 @@
-<section class=" pt-14 mx-auto max-w-3xl grid justify-items-center">
-  <p class="font-moret font-medium text-orange text-3xl">Registrer dit digitale skrald</p>
-  <img class="pil w-1/25 h-auto" src="../../src/assets/images/pil.png" /><br />
+---
+import Pil from "../assets/images/pil.png";
+import Trash from "../assets/images/trash.svg";
+import { Image } from "astro:assets";
+---
+
+<section class="pt-14 mx-auto max-w-3xl grid justify-items-center">
+  <p class="font-moret font-medium text-orange text-3xl">
+    Registrer dit digitale skrald
+  </p>
+  <Image
+    src={Pil}
+    alt="Københavnerbilleder bogforside"
+    class="pil w-1/25 h-auto"
+  /><br />
 
   <div class="ryst">
-    <a href="#registrer"
-      ><img class="ryst w-40 relative -top-20" src="/src/assets/images/trash.svg" /></a
-    >
+    <a href="#registrer">
+      <Image
+        src={Trash}
+        alt="Københavnerbilleder bogforside"
+        class="ryst w-40 relative -top-20"
+      />
+    </a>
   </div>
 </section>
 

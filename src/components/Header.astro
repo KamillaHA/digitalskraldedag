@@ -1,15 +1,21 @@
+---
+import Logo from "../assets/images/pige.svg";
+import { Image } from "astro:assets";
+---
+
 <nav class="bg-gron m-0 p-8">
   <ul class="list-none flex
    justify-between items-center">
     <div class="logo">
       <li>
-        <a href="/"
+        <!-- <a href="/"
           ><img
             class="w-10"
             src="../src/assets/images/logo.svg"
             alt="Forside"
           /></a
-        >
+        > -->
+        <Image src={Logo} alt="Københavnerbilleder bogforside" class="w-10" />
       </li>
     </div>
 

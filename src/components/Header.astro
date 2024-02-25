@@ -1,5 +1,6 @@
 ---
 import Logo from "../assets/images/logo.svg";
+import Insta from "../assets/images/insta.png";
 import { Image } from "astro:assets";
 ---
 
@@ -36,7 +37,7 @@ import { Image } from "astro:assets";
 
     <div class="flex">
       <li>
-        <a
+        <!-- <a
           href="https://www.instagram.com/worldcleanupday.global/"
           target="_blank"
           ><img
@@ -44,7 +45,12 @@ import { Image } from "astro:assets";
             src="/assets/images/insta.png"
             alt="instagram"
           /></a
-        >
+        > -->
+        <Image
+          src={Insta}
+          alt="Københavnerbilleder bogforside"
+          class="w-12 pr-6 cursor-pointer hover:scale-110"
+        />
       </li>
       <li>
         <a
